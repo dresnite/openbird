@@ -1,0 +1,12 @@
+{
+  "name": "openbird-backend",
+  "version": "0.0.1",
+  "description": "The backend of the open-source social network",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.ts"
+  },
+  "author": "dresnite",
+  "license": "GPL-3.0"
+}
