@@ -7,7 +7,7 @@ OpenBird is an open-source social network, inspired by Twitter/X. It aims to be 
 
 ## Donate (or hire me)
 
-OpenBird is free, but the cost of living is at an all time high. If you'd like to support my mission of building a great open-source social network, consider [making a donation]() or [hiring me](https://dresnite.com).
+OpenBird is free, but the cost of living is at an all time high. If you'd like to support my mission of building a great open-source social network, consider [making a donation](https://www.paypal.com/donate/?hosted_button_id=BBTQDVKJNG3AG) or [hiring me](https://dresnite.com).
 
 ## Still not ready
 
