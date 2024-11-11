@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "start": "node --experimental-strip-types --no-warnings --env-file=.env src/index.ts"
+    "start": "node --experimental-strip-types --no-warnings --env-file=.env src/index.ts",
+    "test": "node --experimental-strip-types --no-warnings --env-file=.dev.env --test tests/**/*.test.ts"
   },
   "author": "dresnite",
   "license": "GPL-3.0",
@@ -21,6 +22,7 @@
     "@types/cookie-parser": "^1.4.7",
     "@types/express": "^5.0.0",
     "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
     "@types/validator": "^13.12.2",
     "supertest": "^7.0.0"
   }
