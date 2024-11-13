@@ -1,6 +1,7 @@
 import test, { beforeEach } from 'node:test'
 import request from 'supertest'
-import { prepareDatabase } from './fixtures/prepare-database.ts'
+import mongoose from 'mongoose'
+import { dummyUserData, prepareDatabase } from './fixtures/prepare-database.ts'
 import app from '../src/app.ts'
 
 beforeEach(prepareDatabase)
@@ -54,4 +55,19 @@ test('Should fail to register an user because email is not valid', () => {
             email: 'dummy.com'
         })
         .expect(201)
+})
+
+test('Should retrieve dummy user', () => {
+    request(app)
+        .get('/users/' + dummyUserData._id)
+        .send()
+        .expect(200)
+})
+
+test('Should fail to retrieve user data', () => {
+    const fakeUserId = new mongoose.Types.ObjectId()
+    request(app)
+        .get('/users/' + fakeUserId)
+        .send()
+        .expect(404)
 })
